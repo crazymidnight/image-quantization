@@ -20,7 +20,7 @@ int main(void) {
 	unsigned char *blue = new unsigned char[w*h];
 	unsigned char *intensity = new unsigned char[w*h];
 	
-
+	#pragma omp parallel for
 	for (int i = 0; i < w; i++) {
 		for (int j = 0; j < h; j++) {
 			image.get_pixel(i, j, r, g, b);
@@ -33,12 +33,15 @@ int main(void) {
 	}
 	
 	bitmap_image G(file_name);
+
+	#pragma omp parallel for
 	for (int i = 0; i < w; i++) {
 		for (int j = 0; j < h; j++) {
 			unsigned char a = (unsigned char)intensity[j*w + i];
 			G.set_pixel(i, j, a, a, a);
 		}
 	}
+	
 
 	G.save_image("output.bmp");
 	free(red);
