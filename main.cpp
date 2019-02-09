@@ -67,7 +67,7 @@ int main(int argc, char *argv[]) {
 	unsigned char *green = new unsigned char[w*h];
 	unsigned char *blue = new unsigned char[w*h];
 	unsigned char *intensity = new unsigned char[w*h];
-	// omp_set_num_threads(4);
+	
 	#pragma omp parallel for
 	for (int i = 0; i < w; i++) {
 		for (int j = 0; j < h; j++) {
