@@ -1,4 +1,9 @@
 # image-quantization
 Lab №1 on parallel programming
 
-![img](https://github.com/crazymidnight/image-quantization/blob/master/input.bmp)
+## Implemetation
+First step is building: ```g++ main.cpp -fopenmp -o quant```
+
+Program takes two parameters:
+1. Number of threads
+2. Number of quantization levels between 4 and 10
