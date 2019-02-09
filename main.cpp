@@ -8,7 +8,55 @@
 #include "bitmap_image.hpp"
 
 
-int main(void) {
+struct Quant {
+	short unsigned int R;
+	short unsigned int G;
+	short unsigned int B;
+};
+
+struct Quant quants[10] = {
+	{0, 0, 0},
+	{127, 0, 0},
+	{255, 0, 0},
+	{0, 127, 0},
+	{0, 255, 0},
+	{0, 0, 127},
+	{0, 0, 255},
+	{127, 0, 127},
+	{127, 127, 0},
+	{0, 127, 127}
+};
+
+struct Quant quantize(int intensity, int levels, double level) {
+	for (int i = 0; i < levels; i++) {
+		if (intensity > level * i && intensity < level * (i + 1)) {
+			return quants[i];
+		}
+	}
+}
+
+int main(int argc, char *argv[]) {
+	double init_time = omp_get_wtime();
+	int levels;
+	int threads;
+	if (argv[1] != NULL && argc > 1) {
+		threads = atoi(argv[1]);
+	} else {
+		threads = 4;
+	}
+	if (argv[2] != NULL && argc > 2) {
+		levels = atoi(argv[2]);
+	} else {
+		levels = 10;
+	}
+	printf("Number of threads: %i\n", threads);
+	printf("Number of levels: %i\n", levels);
+	omp_set_num_threads(threads);
+	if (levels < 4 || levels > 10) {
+		printf("Number of levels must be between 4 and 10\n");
+		exit(1);
+	}
+	double level = 255 / levels;
 	std::string file_name("input.bmp");
 	bitmap_image image(file_name);
 
@@ -19,7 +67,7 @@ int main(void) {
 	unsigned char *green = new unsigned char[w*h];
 	unsigned char *blue = new unsigned char[w*h];
 	unsigned char *intensity = new unsigned char[w*h];
-	
+	// omp_set_num_threads(4);
 	#pragma omp parallel for
 	for (int i = 0; i < w; i++) {
 		for (int j = 0; j < h; j++) {
@@ -38,15 +86,17 @@ int main(void) {
 	for (int i = 0; i < w; i++) {
 		for (int j = 0; j < h; j++) {
 			unsigned char a = (unsigned char)intensity[j*w + i];
-			G.set_pixel(i, j, a, a, a);
+			struct Quant quant = quantize(a, levels, level);
+			G.set_pixel(i, j, quant.R, quant.G, quant.B);
 		}
 	}
 	
-
 	G.save_image("output.bmp");
 	free(red);
 	free(green);
 	free(blue);
 	free(intensity);
+	double end_time = omp_get_wtime();
+	printf("Execution time: %f\n", end_time - init_time);
 	return 0;
 }
