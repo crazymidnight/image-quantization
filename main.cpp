@@ -68,7 +68,7 @@ int main(int argc, char *argv[]) {
 	unsigned char *blue = new unsigned char[w*h];
 	unsigned char *intensity = new unsigned char[w*h];
 	
-	#pragma omp parallel for
+	#pragma omp parallel for schedule(static)
 	for (int i = 0; i < w; i++) {
 		for (int j = 0; j < h; j++) {
 			image.get_pixel(i, j, r, g, b);
@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 	
 	bitmap_image G(file_name);
 
-	#pragma omp parallel for
+	#pragma omp parallel for schedule(static)
 	for (int i = 0; i < w; i++) {
 		for (int j = 0; j < h; j++) {
 			unsigned char a = (unsigned char)intensity[j*w + i];
