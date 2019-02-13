@@ -1,6 +1,4 @@
 # image-quantization
-Lab №1 on parallel programming
-
 ## Implemetation
 First step is building: ```g++ main.cpp -fopenmp -o quant```
 
