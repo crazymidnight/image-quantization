@@ -1,6 +1,6 @@
 # image-quantization
 ## Implemetation
-First step is building: ```g++ main.cpp -fopenmp -o quant```
+First step is building: ```g++ cppquant/main.cpp -fopenmp -o quant```
 
 Program takes two parameters:
 1. Number of threads
