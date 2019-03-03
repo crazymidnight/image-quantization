@@ -1,0 +1,210 @@
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.034630
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.030254
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.030695
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.031634
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.032236
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.032520
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.031839
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.032353
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.032265
+Number of threads: 1
+Number of levels: 10
+Execution time: 0.030229
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.030694
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.025954
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.028089
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.027652
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.025964
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.025867
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.028869
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.028641
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.025334
+Number of threads: 2
+Number of levels: 10
+Execution time: 0.030555
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.026335
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.028014
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.026339
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.027644
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.029453
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.031363
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.028303
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.028528
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.029982
+Number of threads: 4
+Number of levels: 10
+Execution time: 0.030853
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.026707
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.026226
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.027522
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.028729
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.024694
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.025239
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.027320
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.026368
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.025723
+Number of threads: 6
+Number of levels: 10
+Execution time: 0.033674
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.025870
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.027584
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.025877
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.025874
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.026880
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.027407
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.027338
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.029148
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.025119
+Number of threads: 8
+Number of levels: 10
+Execution time: 0.025789
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.029395
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.026139
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.026073
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.025666
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.027004
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.030643
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.029375
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.025760
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.026522
+Number of threads: 10
+Number of levels: 10
+Execution time: 0.026855
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.026776
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.027820
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.025231
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.026097
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.025998
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.026888
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.025476
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.025438
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.026481
+Number of threads: 12
+Number of levels: 10
+Execution time: 0.027094
