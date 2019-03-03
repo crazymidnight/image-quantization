@@ -37,13 +37,32 @@ if not os.path.exists("std.xlsx"):
     ms.to_excel("std.xlsx")
 
 fig, ax = plt.subplots()
-ind = range(1, 8)
-plt.bar(ind, means)
+if not os.path.exists("bar.png"):
+    ind = range(1, 8)
+    plt.bar(ind, means)
 
-ax.set_xticklabels(["0", "1", "2", "4", "6", "8", "10", "12"])
+    ax.set_xticklabels(["0", "1", "2", "4", "6", "8", "10", "12"])
 
-ax.set_xlabel("Number of threads")
-ax.set_ylabel("Execution time, ms")
-ax.set_title("Thread test")
+    ax.set_xlabel("Number of threads")
+    ax.set_ylabel("Execution time, ms")
+    ax.set_title("Thread test")
 
-plt.savefig("bar.png")
+    plt.savefig("bar.png")
+
+if not os.path.exists("improvement.png"):
+    ind = range(1, 7)
+    improve = []
+    for i in range(1, 7):
+        improve.append(round((1 - means[i] / means[0]) * 100, 2))
+
+    print(improve)
+
+    plt.bar(ind, improve)
+
+    ax.set_xticklabels(["0", "2", "4", "6", "8", "10", "12"])
+
+    ax.set_xlabel("Number of threads")
+    ax.set_ylabel("Improvement, %")
+    ax.set_title("Improvement in comparison with one thread")
+
+    plt.savefig("improvement.png")
