@@ -11,6 +11,6 @@ Start quantization: ```./quant 2 7```
 ## CUDA implementation
 Building: ```nvcc cudaquant/main.cpp -o cudaquant```
 
-Program takes number of quantization levels between 4 and 10 as parameter
+Program takes number of quantization levels between 4 and 10 as parameter.
 
 Start quantization: ```./cudaquant 7```
