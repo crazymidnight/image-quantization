@@ -5,7 +5,7 @@
 #include <omp.h>
 #include <math.h>
 
-#include "bitmap_image.hpp"
+#include "../utils/bitmap_image.hpp"
 
 
 struct Quant {

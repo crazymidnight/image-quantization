@@ -5,7 +5,7 @@
 #include <math.h>
 #include <cuda.h>
 
-#include "../cppquant/bitmap_image.hpp"
+#include "../utils/bitmap_image.hpp"
 
 
 struct Quant {
